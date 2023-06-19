@@ -6,7 +6,7 @@ import random
 class Server:
     # Initialize the server with the server address and port number.
     def __init__(self):
-        self.server = '192.168.1.130'
+        self.server = '172.19.128.1'
         self.port = 5555
         self.addr = (self.server, self.port)
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
