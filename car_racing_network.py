@@ -6,7 +6,7 @@ import pickle
 class Network:
     def __init__(self): # Initialize the network connection with the server address and port number.
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.server = "192.168.1.130" # The IP address of the server.
+        self.server = "172.19.128.1" # The IP address of the server.
         self.port = 5555 # The port number of the server.
         self.addr = (self.server, self.port)
         self.p = self.connect() # The player ID, received from the server.
