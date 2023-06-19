@@ -39,19 +39,19 @@ class CarRacing:
     def initialize(self):
         self.crashed = False
 
-        self.carImg = pygame.image.load('/Users/macbookair/Downloads/CSE_354/SourceCode/img/car.png')
+        self.carImg = pygame.image.load('car.png')
         self.car_x_coordinate = [(self.display_width * 0.45), (self.display_width * 0.55)] # x coordinates for player 0 and 1
         self.car_y_coordinate = (self.display_height * 0.8)
         self.car_width = 49
 
-        self.enemy_car = pygame.image.load('/Users/macbookair/Downloads/CSE_354/SourceCode/img/enemy_car_1.png')
+        self.enemy_car = pygame.image.load('enemy_car_1.png')
         self.enemy_car_startx = random.randrange(310, 450)
         self.enemy_car_starty = -600
         self.enemy_car_speed = 5
         self.enemy_car_width = 49
         self.enemy_car_height = 100
 
-        self.bgImg = pygame.image.load('/Users/macbookair/Downloads/CSE_354/SourceCode/img/back_ground.png')
+        self.bgImg = pygame.image.load('back_ground.png')
         self.bg_x1 = (self.display_width / 2) - (360 / 2)
         self.bg_x2 = (self.display_width / 2) - (360 / 2)
         self.bg_y1 = 0
